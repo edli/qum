@@ -1,0 +1,15 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "node": true
+      }
+    }]
+  ],
+  "plugins": [
+    "transform-class-properties",
+    "transform-object-rest-spread",
+    "transform-async-to-bluebird",
+    "transform-promise-to-bluebird"
+  ]
+}

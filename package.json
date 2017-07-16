@@ -1,0 +1,44 @@
+{
+  "name": "qum",
+  "version": "1.0.0",
+  "description": "Developer framework, API and CLI for creating and running \"deals\"",
+  "main": "./lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sukazavr/qum.git"
+  },
+  "author": "Dmitrii Bykov <sukazavr@gmail.com>",
+  "license": "MIT",
+  "bin": {
+    "qum": "./lib/cli/index.js"
+  },
+  "scripts": {
+    "dev": "babel src --watch --out-dir lib",
+    "precompile": "npm run clean",
+    "compile": "babel src --out-dir lib"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-async-to-bluebird": "^1.1.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-promise-to-bluebird": "^1.1.1",
+    "babel-preset-env": "^1.5.2"
+  },
+  "bugs": {
+    "url": "https://github.com/sukazavr/qum/issues"
+  },
+  "homepage": "https://github.com/sukazavr/qum#readme",
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": [
+    "cli",
+    "yeoman",
+    "tool"
+  ],
+  "dependencies": {
+    "babel-register": "^6.24.1",
+    "yargs-parser": "^7.0.0"
+  }
+}
