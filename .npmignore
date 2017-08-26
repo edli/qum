@@ -2,5 +2,4 @@
 /.editorconfig
 /.nvmrc
 /.travis.yml
-/.yarn.lock
 /src

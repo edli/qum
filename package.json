@@ -1,11 +1,11 @@
 {
   "name": "qum",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Developer framework, API and CLI for creating and running \"deals\"",
   "main": "./lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sukazavr/qum.git"
+    "url": "https://github.com/sukazavr/qum.git"
   },
   "author": "Dmitrii Bykov <sukazavr@gmail.com>",
   "license": "MIT",
@@ -15,7 +15,8 @@
   "scripts": {
     "dev": "babel src --watch --out-dir lib",
     "precompile": "npm run clean",
-    "compile": "babel src --out-dir lib"
+    "compile": "babel src --out-dir lib",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -23,7 +24,8 @@
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-plugin-transform-promise-to-bluebird": "^1.1.1",
-    "babel-preset-env": "^1.5.2"
+    "babel-preset-env": "^1.5.2",
+    "semantic-release": "^7.0.2"
   },
   "bugs": {
     "url": "https://github.com/sukazavr/qum/issues"
