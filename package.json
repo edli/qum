@@ -13,9 +13,12 @@
     "qum": "./lib/cli/index.js"
   },
   "scripts": {
+    "clean": "rimraf lib",
+    "start": "npm run dev",
     "dev": "babel src --watch --out-dir lib",
     "precompile": "npm run clean",
     "compile": "babel src --out-dir lib",
+    "postinstall": "npm run compile",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "devDependencies": {
@@ -25,6 +28,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-plugin-transform-promise-to-bluebird": "^1.1.1",
     "babel-preset-env": "^1.5.2",
+    "rimraf": "^2.6.1",
     "semantic-release": "^7.0.2"
   },
   "bugs": {
