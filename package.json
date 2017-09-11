@@ -18,7 +18,7 @@
     "dev": "babel src --watch --out-dir lib",
     "precompile": "npm run clean",
     "compile": "babel src --out-dir lib",
-    "postinstall": "npm run compile",
+    "prepare": "npm run compile",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "devDependencies": {
